@@ -1,0 +1,117 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Employee Management</title>
+
+    <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="~/AdminLTE/dist/css/adminlte.min.css" />
+</head>
+
+<body class="hold-transition login-page">
+
+    @RenderBody()
+
+    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/AdminLTE/dist/js/adminlte.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+
+
+
+ *@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Employee Management System</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet"
+          href="~/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- AdminLTE -->
+    <link rel="stylesheet"
+          href="~/AdminLTE/dist/css/adminlte.min.css">
+
+    <style>
+
+            body {
+               
+                 background: #eef5ff;
+            }
+
+            .login-box,
+            .register-box {
+                width: 420px;
+            }
+
+            .card {
+                border: none;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,.08);
+            }
+
+            .login-logo a,
+            .register-logo a {
+                color: #343a40;
+                font-size: 34px;
+                font-weight: 700;
+            }
+
+            .btn-primary {
+                border-radius: 8px;
+                font-weight: 600;
+            }
+
+            .card-header {
+                background: white;
+                border-bottom: none;
+            }
+
+            .login-box-msg {
+                font-size: 16px;
+            }
+
+    </style>
+
+</head>
+
+<body class="hold-transition login-page">
+
+    @RenderBody()
+
+    <!-- jQuery -->
+    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE -->
+    <script src="~/AdminLTE/dist/js/adminlte.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
